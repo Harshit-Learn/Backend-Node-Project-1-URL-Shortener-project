@@ -1,6 +1,7 @@
 import express from "express"
 import mongoose from 'mongoose'
 import {shortUrl , originalUrl } from './Controllers/url.js'
+import ejs from 'ejs'
 //Create Server
 const app = express();
 
