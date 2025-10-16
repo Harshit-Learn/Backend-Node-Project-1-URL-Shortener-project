@@ -2,6 +2,8 @@
 
 Simple URL shortener built with Node.js, Express, and MongoDB.
 
+## URL: https://url-shortener-project-indol.vercel.app/
+
 ## Overview
 
 This project provides a tiny service to shorten long URLs and redirect users to the original URL using a short code. It includes a minimal web UI and backend API.
