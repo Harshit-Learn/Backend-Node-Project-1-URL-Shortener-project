@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
-import { shortUrl, originalUrl } from "../Controllers/url.js";
+import { shortUrl, originalUrl } from "./Controllers/url.js";
 import ejs from "ejs";
 import path from "path";
 import serverless from "serverless-http";
