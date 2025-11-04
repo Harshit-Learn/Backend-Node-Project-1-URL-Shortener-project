@@ -5,7 +5,9 @@ export const shortUrl = async (req , res)=>{
     const longUrl = req.body.longUrl;
     const shortCode = shortid.generate();
 
-    const shortUrl = `http://localhost:2000/${shortCode}`
+  // Dynamic base URL (local + vercel both work)
+    const baseUrl = process.env.BASE_URL || 'http://localhost:2000';
+    const shortUrl = `${baseUrl}/${shortCode}`;
 
     // save  to database
     const newUrl = new Url({shortCode, longUrl }) // EJS se name:longUrl liya he
